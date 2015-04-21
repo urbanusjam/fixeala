@@ -1,0 +1,14 @@
+*.class
+*.jar
+*.war
+*.ear
+.settings
+.project
+.classpath
+.tomcatplugin
+.idea
+target
+*.iml
+dependency-reduced-pom.xml
+.factorypath
+bin/

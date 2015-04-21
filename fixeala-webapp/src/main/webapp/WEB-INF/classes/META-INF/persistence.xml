@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+ 			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+ 								http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
+                                 
+    <persistence-unit name="fixealaPU" transaction-type="RESOURCE_LOCAL" >  
+    	
+    	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+    	
+      	<class>ar.com.urbanusjam.fixeala.model.ActivationToken</class>
+       	<class>ar.com.urbanusjam.fixeala.model.Authority</class> 
+        <class>ar.com.urbanusjam.fixeala.model.Comment</class>      
+        <class>ar.com.urbanusjam.fixeala.model.Issue</class>  
+        <class>ar.com.urbanusjam.fixeala.model.IssueFollow</class>        
+        <class>ar.com.urbanusjam.fixeala.model.IssueLink</class>  
+<!--    <class>ar.com.urbanusjam.fixeala.model.IssuePageView</class> -->
+        <class>ar.com.urbanusjam.fixeala.model.IssueRepair</class>
+        <class>ar.com.urbanusjam.fixeala.model.IssueHistory</class> 
+        <class>ar.com.urbanusjam.fixeala.model.IssueVote</class> 
+        <class>ar.com.urbanusjam.fixeala.model.IssueVerification</class> 
+        <class>ar.com.urbanusjam.fixeala.model.MediaContent</class>   
+        <class>ar.com.urbanusjam.fixeala.model.PasswordToken</class>    
+        <class>ar.com.urbanusjam.fixeala.model.Tag</class>   
+        <class>ar.com.urbanusjam.fixeala.model.User</class>
+        <class>ar.com.urbanusjam.fixeala.model.Province</class>
+        <class>ar.com.urbanusjam.fixeala.model.Department</class>
+        <class>ar.com.urbanusjam.fixeala.model.Locality</class>
+                
+        <exclude-unlisted-classes/>    
+        
+        <properties>
+      		<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+      		<property name="hibernate.show_sql" value="false"/>      		
+    	</properties>
+        
+	</persistence-unit>
+	
+</persistence>     
